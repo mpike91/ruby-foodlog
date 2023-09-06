@@ -1,16 +1,9 @@
-<h1>Entries</h1>
-
 <% content_for :title do %>
-  Foodlog &ndash; <%= DateTime.now %>
+  Foodlog &ndash; <%= DateTime.now.strftime("%B %e, %Y") %>
 <% end %>
 
-<div id="entries">
+<div id="entries" class="columns mt-6 is-centered">
   <% @entries.each do |entry| %>
     <%= render entry %>
-    <p>
-      <%= link_to "Show this entry", entry %>
-    </p>
   <% end %>
 </div>
-
-<%= link_to "New entry", new_entry_path %>
