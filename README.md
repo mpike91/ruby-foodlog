@@ -1,24 +1,5 @@
-# README
+# Ruby on Rails "Food Log"
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is my second exposure to Ruby on Rails. I followed this "crash course" video to build a food log app.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+<a href="https://www.youtube.com/watch?v=B3Fbujmgo60" target="_blank">https://www.youtube.com/watch?v=B3Fbujmgo60</a>
