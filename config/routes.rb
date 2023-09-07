@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root "entries#index"
-
+  get 'archives/index'
   resources :entries
+  root "entries#index"
 end
