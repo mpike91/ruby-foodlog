@@ -1,7 +1,7 @@
 <div id="<%= dom_id entry %>" class="column is-one-quarter">
   <div class="card">
     <header class="card-header">
-      <p class="card-header-title"><%= entry.meal_type %></p>
+      <p class="card-header-title is-centered"><%= entry.meal_type %></p>
     </header>
     <div class="card-content">
       <div class="content">
@@ -15,7 +15,9 @@
     <div class="card-footer">
       <%= link_to "Show", entry, class: "card-footer-item" %>
       <%= link_to "Edit", edit_entry_path(entry), class: "card-footer-item" %>
-      <%= link_to "Destroy", entry, method: :delete, data: {confirm: "Are you sure?" }, class: "card-footer-item" %>
+      <%= link_to "Destroy", entry, data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "card-footer-item" %>
     </div>
   </div>
 </div>
+
+<%#= link_to "Destroy", entry, method: :delete, data: {confirm: "Are you sure?" }, class: "card-footer-item" %>

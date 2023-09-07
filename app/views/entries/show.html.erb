@@ -1,6 +1,11 @@
-<%= render @entry %>
+<%#= render @entry %>
 
 <div>
-  <%= link_to "Edit", edit_entry_path(@entry) %> |
-  <%= link_to "Back to entries", entries_path %>
+  <p><span class="has-text-weight-bold">Meal type: </span><%= @entry.meal_type %></p>
+  <p><span class="has-text-weight-bold">Calories: </span><%= @entry.calories %></p>
+  <p><span class="has-text-weight-bold">Proteins: </span><%= @entry.proteins %></p>
+  <p><span class="has-text-weight-bold">Carbohydrates: </span><%= @entry.carbohydrates %></p>
+  <p><span class="has-text-weight-bold">Fats: </span><%= @entry.fats %></p>
+  <%= link_to "Edit", edit_entry_path(@entry) %> | 
+  <%= link_to "Back", entries_path %>
 </div>
