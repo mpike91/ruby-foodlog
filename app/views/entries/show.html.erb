@@ -1,11 +1,37 @@
-<%#= render @entry %>
+<% content_for :title do %>
+  <%= @entry.meal_type %> &ndash; <%= DateTime.now.strftime("%B %e, %Y") %>
+<% end %>
 
-<div>
-  <p><span class="has-text-weight-bold">Meal type: </span><%= @entry.meal_type %></p>
-  <p><span class="has-text-weight-bold">Calories: </span><%= @entry.calories %></p>
-  <p><span class="has-text-weight-bold">Proteins: </span><%= @entry.proteins %></p>
-  <p><span class="has-text-weight-bold">Carbohydrates: </span><%= @entry.carbohydrates %></p>
-  <p><span class="has-text-weight-bold">Fats: </span><%= @entry.fats %></p>
-  <%= link_to "Edit", edit_entry_path(@entry) %> | 
-  <%= link_to "Back", entries_path %>
+<div class="columns mt-6 is-centered">
+  <div class='column is-one-third'>
+    <nav class="panel is-link">
+      <p class="panel-heading">
+        <%= @entry.meal_type %>
+      </p>
+      <div class="panel-block">
+        Calories: <%= @entry.calories %>
+      </div>
+      <div class="panel-block">
+        Proteins: <%= @entry.proteins %>
+      </div>
+      <div class="panel-block">
+        Carbohydrates: <%= @entry.carbohydrates %>
+      </div>
+      <div class="panel-block">
+        Fats: <%= @entry.fats %>
+      </div>
+    </nav>
+
+    <div class="columns is-mobile">
+      <div class="column">
+        <%= link_to "Edit", edit_entry_path(@entry), class: "button is-gray mr-1" %>
+        <%= link_to "Delete", @entry, data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "button is-gray" %>
+      </div>
+      <div class="column">
+        <!-- -->
+      </div>
+    </div>
+  </div>
 </div>
+
+<%#= link_to "Destroy", entry, data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "card-footer-item" %>
