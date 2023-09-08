@@ -21,6 +21,7 @@ In this app, users can enter meal logs, access specific entries, view today's en
 <p align="center">
   <img src="readme4.png">
 </p>
+<hr>
 <p align="center">
   <img src="readme5.png">
 </p>
