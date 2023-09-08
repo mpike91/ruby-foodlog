@@ -7,17 +7,17 @@ This is my second exposure to Ruby on Rails. I followed this "crash course" vide
 In this app, users can enter meal logs, access specific entries, view today's entries, and view all entries. Users can create, update, and delete entries. The app uses Bulma for simple styling.
 
 <p align="center">
-  <img width=75% src="readme1.png">
+  <img src="readme1.png">
 </p>
 <hr>
 <p align="center">
-  <img width=75% src="readme2.png">
+  <img src="readme2.png">
 </p>
 <hr>
 <p align="center">
-  <img width=75% src="readme3.png">
+  <img src="readme3.png">
 </p>
 <hr>
 <p align="center">
-  <img width=75% src="readme4.png">
+  <img src="readme4.png">
 </p>
